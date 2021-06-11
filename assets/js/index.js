@@ -72,5 +72,7 @@ function renderAvatar(user) {
         $('.layui-nav-img').attr('src', user.user_pic).show();
         $('.text-avatar').hide();
     }
-
+    console.log(user);
+    //缓存登录用户信息
+    localStorage.setItem('userInfo', JSON.stringify(user))
 }
